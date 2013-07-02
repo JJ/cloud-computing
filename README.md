@@ -1,4 +1,4 @@
-evita-cec2013
+Erlang Evolutionary algorithms: GECCO 2013 late breaking abstracts
 =============
 
-Presentation for CEC 2013 using impress.js
+Presentation for GECCO 2013 using impress.js

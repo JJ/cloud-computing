@@ -8,7 +8,33 @@ h1 {
      color: black;
 }
 
-h2, li { 
+ul { 
+      background-color:rgba(240,230,220,0.5);
+}
+
+ul.dark { 
+      background-color:rgba(240,230,220,0.75);
+}
+
+table { 
+      background-color:rgba(230,220,250,0.5);
+           font-size: 2em;
+        margin-left:  auto;
+        margin-right:  auto;
+}
+
+li { 
+     font-size: 2em;
+     font-family: "Alef", sans-serif;
+     color:#1F1209;
+         padding: 10px;
+     }
+
+td,th { 
+     padding: 10px;
+ }
+
+h2{ 
      font-size: 2em;
      font-family: "Alef", sans-serif;
      color: DarkGray;
@@ -48,6 +74,7 @@ p.image {
           bottom:  0;
           left: 0;
           font-size: 1em;
+          background-color:rgba(230,240,250,0.5);
  }
 
 .step

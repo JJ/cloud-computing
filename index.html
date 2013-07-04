@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
 <title>Erlang GECCO 2013 presentation</title>
 <link href='http://fonts.googleapis.com/css?family=Alef|Telex' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="erlang.css" />
+<link rel="stylesheet" type="text/css" href="mm.css" />
 </head>
 <!-- taken from http://www.sitepoint.com/pure-css3-paper-curls/ -->
 <body>
@@ -15,149 +15,9 @@
 
 <div class="step">
   <h1>Adapting Evolutionary Algorithms to the Concurrent Functional Language Erlang</h1>
-  <h2><span class='uci'>J. Albert Cruz</span>, 
-  <span class='ugr'><strong>J. J. Merelo</strong>, A. M. Mora and P. de las Cuevas</span></h2>
-  <h3><a href='http://uci.cu'><span class='uci'>Universidad de Ciencias Informáticas, La
-  Habana, Cuba</span></a> and <a
-  href='http://ugr.es'><span class='ugr'>Universidad de Granada</span></a>
 </div>
 
-<div class="step"  style='background-image: url(http://farm4.staticflickr.com/3048/3055159693_e2d6035d3d_b.jpg);height:600px'
-  data-x='973.8819' data-z='-316.4334' data-rotate-y='36'>
-  <h2><span class='ugr'>Most people like object-oriented procedural languages</a></h2>
 
-<p class='image'>Image from <a href='http://www.flickr.com/photos/digimist/3055159693/'>Digimist</a></p>
-  </div>
-
-<div class="step" 
-     data-x='1802.315' data-z='-918.3255' data-rotate-y='72'
-     style='background-image: url(http://farm8.staticflickr.com/7060/6957923679_094064e46e_b.jpg);height:600px'>
-  <h2><span class='uci'>Erlang is a functional language</span></h2>
-
-<p class='image'>Image from <a href='http://www.flickr.com/photos/ymotongpoo/6957923679'>Yoshifumi Yamaguchi</a></p>
-  </div>
-
-<div class="step" 
-  data-x='1802.315' data-z='-1942' data-rotate-y='108'>
-  <h2>Functional languages are just different</h2>
-
-  <ul>
-    <li>Actor pattern: Concurrency</li>
-    <li>Functiona paradigm for design of applications</li>
- </div>
-
-<div class="step" 
-  data-x='973.9' data-z='-2544' data-rotate-y='144'
-  style='background-image:url(http://farm1.staticflickr.com/32/60849408_11dd57992c_b.jpg);height:600px'
-  >
-  <h2>Actors: concurrent units of execution</h2>
-
-  <ul><li>Implemented as processes in the Erlang VM</li>
-  <li>Lightweight life cycle</li>
-  <li>Using immutable messages</li>
-  </ul>
-  <p class='image'>Image from <a href='http://www.flickr.com/photos/happeningfish/60849408/'>Happenningfish</a></p>
-</div>
-
-  <div class="step" 
-  data-x='0' data-z='-2860' data-rotate-y='180'
-    style='background-image:url(http://farm9.staticflickr.com/8346/8224477844_ea0558eba8_b.jpg);height:600'>
-    
-  <h2><span class='ugr'>Functions as the main concept</a></h2>
-
-    <ul>
-      <li>Efficient implementation of lists</li>
-      <li>Use of hight order functions</li>
-      <li>Macro system</li>
-      </ul>
-
-      <p class='image'>Image from <a href='http://www.flickr.com/photos/gsfc/8224477844'>NASA Goddard</a></p>
-</div>
-
-<div class="step" 
-  data-x='-973.9' data-z='-2544' data-rotate-y='216'>
-  <h2>Using a pool-based algorithm</h2>
-
-    <ul>
-      <li>A pool is an actor</li>
-      <li>The client is an actor requesting individuals from the pool
-      and returning them</li>
-      <li>Separation of architecture and problem encoding; fitness,
-      operators, selection criteria, replacement policy:
-      <em>injected</em> into the pool</li>
-      </ul>
-</div>
-
-   <div class="step" 
-     data-x='-1802.315' data-z='-1942' data-rotate-y='252'
-    style='background-image:url(http://farm5.staticflickr.com/4077/4783917971_cf2c61e668_b.jpg);height:600'
-     >
-  <h2><span class='uci'>A few experiments</a></h2>
-
-     <ul>
-       <li>Download from <a
-       href='https://github.com/jalbertcruz/erlEA/'>GitHub</a></li>
-       <li>Using the maxones problem</li>
-       <li>Incrementing the number of clients</li>
-       </ul>
-
-       <p class='image'>Image by <a
-       href='http://www.flickr.com/photos/ivanplata/4783917971'>Ivan Plata</a>.</p>
-</div>
-
-   <div class="step" 
-  data-x='-1802.315' data-z='-918.3255' data-rotate-y='288'>
-  <h2>Results</h2>
-
-     <table>
-       <tr><th>Clients</th><th>Assignments</th><th>Time (seconds)</th></tr>
-       <tr><td>25</td><td>3040</td><td>5.339950</td></tr>
- <tr><td>50</td><td>4301</td><td>7.891000</td></tr>
- <tr><td>100</td><td>5630</td><td>11.671210</td></tr>
-
-       </table>
-</div>
-
- <div class="step" 
-  data-x='-973.8819' data-z='-316.4334' data-rotate-y='324'>
-  <h2>What gives?</h2>
-
-     <ul>
-       <li>Disappointing results.</li>
-       <li>Intra-actor concurrency rather low: pool communications in
-       a queue.</li>
-       <li>Different models shoud be tried: persistent pool,
-       non-Erlang pool... </li>
-       </ul>
-</div>
-
-<div class="step" 
-  data-x='-973.8819' data-z='-316.4334' data-y='-600'
-  data-rotate-y='324'
-    style='background-image:url(http://farm5.staticflickr.com/4142/4782800980_8d790446ab_b.jpg);height:600'
-  >
-  <h2><span class='ugr'>Worth the while?</a></h2>
-
-     <ul class='dark'>
-       <li>Nice introduction to a non-standard language</li>
-       <li>But more of a stepping-stone to other languages: Scala, Go.</li>
-       <li>Combination with asynchronous event processing. </li>
-       </ul>
-
-       <p class='image'>Image by <a
-       href='http://www.flickr.com/photos/stuartherbert/4782800980/'>Stuart Hebert</a></p>
-</div>
-
-<div class="step" data-y='-600' data-rotate-y='360'>
-  <a href="https://github.com/CANUBE/erlang-gecco2013"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
-  <h1>Adapting Evolutionary Algorithms to the Concurrent Functional Language Erlang</h1>
-  <h2>This presentation available from <a
-  href='https://github.com/CANUBE/erlang-gecco2013'>GitHub</a></h2>
-
-  <h2>Follow us at <a
-  href='http://twitter.com/canubeproject'>@CANUBE</a> and <a
-  href='http://twitter.com/geneura'>@geneura</a> and <a href='http://twitter.com/jjmerelo'>@jjmerelo</a><h2>
-</div>
 
 </div> <!-- big div -->
 

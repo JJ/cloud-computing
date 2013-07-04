@@ -1,4 +1,5 @@
-Erlang Evolutionary algorithms: GECCO 2013 late breaking abstracts
-=============
+mm-gecco13
+==========
 
-Presentation for GECCO 2013 using impress.js
+Presentation for GECCO 2013: Mastermind paper using impress.js
+

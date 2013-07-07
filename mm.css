@@ -2,6 +2,13 @@ body {
     background-color:#fff;
 }
 
+div.img {
+    width:1024px;
+    height:600px;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
 h1 { 
      font-size: 3em;
      font-family: "Alef", sans-serif;
@@ -35,9 +42,9 @@ td,th {
  }
 
 h2{ 
-     font-size: 2em;
+     font-size: 2.5em;
      font-family: "Alef", sans-serif;
-     color: DarkGray;
+     color: #47423F;
      background-color:rgba(250,240,230,0.5);
      padding: 10px;
 }

@@ -17,6 +17,8 @@ h1 {
 
 ul { 
       background-color:rgba(240,230,220,0.5);
+      padding:10px;
+      margin:10px;
 }
 
 ul.dark { 

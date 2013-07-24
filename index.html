@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
-<title>Mastermind GECCO 2013 presentation</title>
+<title>Computación en la nube; Curso del Centro Mediterráneo</title>
 <link href='http://fonts.googleapis.com/css?family=Alef|Telex' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="mm.css" />
 </head>
@@ -14,180 +14,14 @@
   
 
 <div class="step">
-  <h1>Improving Evolutionary Solutions to the Game of MasterMind
-  Using an Entropy-based Scoring Method</h1>
+  <h1>Tendencias en Ingeniería de Computadores: Cloud computing</h1>
 
-  <h2><span class='ugr'><strong>JJ Merelo</strong>, Pedro Castillo, Antonio Mora </span>, <span class='s2'>Anna Esparcia</span></h2>
-  <h2><a href='http://geneura.wordpress.com'><span class='ugr'>GeNeura, U. Granada</span></a>, <a href='http://s2grupo.es'><span class='s2'>S2 Grupo</span></a></h2>
+  <h2><span class='ugr'><strong>JJ Merelo</strong></h2>
+  <h2><a href='http://geneura.wordpress.com'><span class='ugr'>GeNeura, U. Granada</span></a>, <a href='http://twitter.com/jjmerelo'>@jjmerelo</a></h2>
 
-  <h3>Check out this presentation at <a href='http://jj.github.io/mm-gecco13'>goo.gl/IxDYo</a></h3>
+  <h3>Siga esta presentación en  <a href=''></a></h3>
   <p class='image'><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>
 </div>
-
-<div class='step' data-y='-400' data-z='400' data-rotate-x='90' data-scale='5'
-     style='background-image:url(img/tablero.jpg);width:1024px;height:768px;background-repeat:no-repeat'>
-
-  <h2>Let's play MasterMind</h2>
-
-</div>
-
-<div class='step img' data-y='-800' data-x='-512' data-z='-600'
- style='background-image:url(img/secreta.jpg)'
->
-<h2>Create a combination</h2>
-
-</div>
-
-<div class='step img' data-y='-800' data-z='-1000' data-rotate-y='90' data-scale='1'
- style='background-image:url(img/hidden.jpg)'>
-<h2>Hide the combination</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-512' data-z='-1400' 
-     data-rotate-y='180' data-scale='0.6'
-     style='background-image:url(img/primera.jpg)'
->
-
-<h2>Make a guess</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='-1000' data-rotate-y='270' data-scale='0.1'
-     style='background-image:url(img/response.jpg)'
->
-<h2>Get a response</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='-800' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/juego.jpg)'
->
-<h2>Keep playing until solution is found</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='-400' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/how.jpg)'
->
-<h2>How do we solve this problem?</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='-100' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/crowd.jpg)'
->
-<h2>Using a crowd optimization algorithm?</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='200' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/cows.jpg)' title='Meadow landscape with cattle, Roelof'
->
-<h2>Using a cow herd algorithm?</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='500' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/sheep.jpg)' 
->
-<h2>Using a sheep flock algorithm?</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='800' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/Igao.JPG)'
->
-<h2>No! We use an evolutionary algorithm!</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='1100' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/consistent.jpg)'
->
-<h2>Play consistently</h2>
-
-</div>
-
-<div class='step img' data-y='-600' data-x='-1024' data-z='1400' data-rotate-y='270' data-scale='0.2'
-     style='background-image:url(img/profiler.JPG)'
->
-<h2>Make the algorithm faster using a profiler</h2>
-
-<h2>Wait! What's a profiler?</h2>
-</div>
-
-<div class='step' data-y='-600' data-x='-1024' data-z='1700' data-rotate-y='270' data-scale='0.2'>
-  <h2>This is profiling for fun and profit</h2>
-<img src='img/post-profile.png' alt='Devel::NYTprof output after profiling'>
-</div>
-
-<div class='step' data-y='-600' data-x='-1024' data-z='2000' data-rotate-y='270' data-scale='0.2'>
-  <h2><span class='ugr'>What else do we do in this paper?</span></h2>
-<img src='http://farm6.staticflickr.com/5179/5533780781_6a086beab0_z.jpg' alt='tools' style='float:right;width:500px'>
-<ul>
-  <li>Test population and consistent set size</li>
-  <li>Try faster mutation operators</li>
-  <li>Establish a new <em>state of the art</em> in number of moves needed to solve the game of Mastermind</li>
-</ul>
-
-  <p class='image'>Image from <a href='http://www.flickr.com/photos/jackazphotography/5533780781/'>JackAZ Photo</a>
-</div>
-
-<div class='step img' data-y='-600' data-x='-512' data-z='2150' data-rotate-y='360' data-scale='0.4'
-     style='background-image:url(http://farm4.staticflickr.com/3112/2698598542_4c36e163ed_o.jpg)'
->
-<h2>Permutation is slow! What do we do?</h2>
-
-<ul><li>Try a faster permutation</li>
-  <li>Use two operators: <strong>swap</strong> and <strong>shift</strong></li>
-</ul>
-
-<p class='image'>Image by <a href='http://www.flickr.com/photos/curveto/2698598542/in/photostream/'>CurveTo</a>.</p> 
-</div>
-
-<div class='step img' data-y='-600' data-x='0' data-z='2000' data-rotate-y='270' data-scale='0.4'
->
-  <h2>Results are good enough</h2>
-
-<img src='img/turns.jpg' alt='average turns needed to win' >
-
-</div>
-
-<div class='step img' data-y='-600' data-x='0' data-z='1500' data-rotate-y='270' data-scale='0.4'
-style='width:700px'>
-  <h2>But not great</h2>
-
-<img src='img/evals.png' alt='average evals needed to win' >
-<h3>Time</h3>
-<img src='img/times.png' alt='average time needed to win' >
-
-</div>
-
-<div class='step img' data-y='600' data-x='0' data-z='1500' data-rotate-y='270' data-scale='0.4'
-     style='background-image:url(img/conclusions.jpg)'
->
-
-  <h2>Concluding</h2>
-
-  <ul><li>Results better, but not faster</li>
-    <li>Canonical permutation > shuffle or swap + shift</li>
-    <li>Systematical exploration of population and consistent set size needed</li>
-  </ul>
-
-</div>
-
-<div class='step img' data-y='600' data-x='0' data-z='2100' data-rotate-y='270' data-scale='0.4'
-     style='background-image:url(img/rustyseat.jpg)'
->
-
-  <h2>Any questions?</h2>
-
-  <h2><a href='http://geneura.wordpress.com'>Visit our blog http://geneura.wordpress.com</a>. We are looking for partners in European projects.</h2>
-
-  <h2>Follow <a href='http://twitter.com/geneura'>@geneura</a>, <a href='http://twitter.com/canubeproject'>@CANUBEproject</a>, <a href='http://twitter.com/anyselfproject'>@AnySelfProject</a> and <a href='http://twitter.com/jjmerelo'>@jjmerelo</a>. Download/use this presentation from <a href='https://github.com/JJ/mm-gecco13'>git.io/mmp</h2>
-
-  <h2>Want to participate in an open source novel? Check <a href='http://jj.github.io/hoborg'>http://jj.github.io/hoborg Hoborg, the novel</a></h2>
 
 </div> <!-- big div -->
 

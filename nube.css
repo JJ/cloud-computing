@@ -2,8 +2,12 @@ body {
     background-color:#fff;
 }
 
+div.step {
+    width: 800px;
+}
+
 div.img {
-    width:1024px;
+    width:800px;
     height:600px;
     background-repeat:no-repeat;
     background-position:center;

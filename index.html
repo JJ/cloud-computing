@@ -50,6 +50,58 @@
 <h3>¡Hay que tener cuidado con las tormentas!</h3>
 </div>
 
+<div class="step" data-scale='1' data-x='7000' data-rotate-x='90'>
+  <h2>Si hay que virtualizar, se virtualiza. Pero virtualizar para nada...</h2>
+
+<ul>
+  <li>El origen de la virtualización está en los <em>mainframes de los 60</em></li>
+  <li>Resurge en el año 2005 por la potencia alcanzada por los
+  procesadores.</li>
+
+  <li>Además: simplifica el control y despliegue de recursos, permite
+    usar diferentes sistemas operativos y aprovechar mejor el
+    hardware.</li>
+
+</ul>
+</div>
+
+
+<div class="step" data-scale='1' data-x='8000' data-rotate-x='90'>
+
+  <h2>La virtualización es la <em>killer app</em> del software
+  libre.</h2>
+
+  <ul>
+    <li>Toda la nube está basada en software libre, empezando por los
+      propios programas que la sustentan.</li>
+    <li>Los estándares abiertos permite que se integren aplicaciones
+      procedentes de muchos <em>vendors</em> diferentes.</li>
+    <li>El modelo económico está basado en los servicios, no en la
+      venta por licencia.</li>
+    <li>La virtualización también es la killer app del software
+    privativo.</li>
+  </ul>
+
+
+</div>
+
+<div class="step" data-scale='1' data-x='9000' data-rotate-x='90'>
+
+  <h2>Claro, como todo es gratis...</h2>
+
+<ul>
+  <li>El software libre te da varias libertades: copia, uso, acceso al
+    fuente y distribución.</li>
+  <li>Como hay libertad de uso, copia y distribución, es, en general,
+  gratis.</li>
+  <li>Pero lo importante es como se construye un ecosistema de
+    herramientas a partir de uno determinado.</li>
+</ul>
+
+</div>
+
+
+
 <div class="step" data-scale='1' data-x='5000' data-y='1000'
      data-rotate-x='90'>
   <h2>Virtualizando un procesador</h2>
@@ -71,7 +123,7 @@
 
 </div>
 
-<div class="step" data-scale='1' data-x='5000' data-y='2000'
+<div class="step" data-scale='1' data-x='6000' data-y='1000'
      data-rotate-x='90'>
 
   <h2>Hipervisores para el niño y la niña</h2>
@@ -83,6 +135,25 @@
 
   <li><a href='https://en.wikipedia.org/wiki/Hyper-V'>Hyper-V</a> de
     (ahora) Microsoft: Tipo 1</li>
+
+  <li><a href='https://en.wikipedia.org/wiki/Xen'>Xen</a> es un
+    hipervisor de tipo 1 con licencia GPL.</li>
+</ul>
+
+</div>
+
+<div class="step" data-scale='1' data-x='7000' data-y='1000'
+     data-rotate-x='90'>
+
+  <h2>Todavía hay clases</h2>
+
+<ul>
+  <li>Un hipervisor tipo 1 (que arranca directamente) arranca un
+    sistema operativo <em>anfitrión</em> o <a href='http://wiki.xen.org/wiki/Dom0'><em>dominio0</em>
+      == <code>dom0</code></a>.</li>
+  <li>El resto de los sistemas operativos <em>invitados</em> arrancan
+    en <a href='http://wiki.xen.org/wiki/DomU'><em>dominio de
+    usuario</em> == <code>domU</code></a>, sin acceso al hardware.</li>
 </ul>
 
 </div>

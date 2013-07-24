@@ -2,10 +2,6 @@ body {
     background-color:#fff;
 }
 
-div.step {
-    width: 800px;
-}
-
 div.img {
     width:800px;
     height:600px;
@@ -15,7 +11,7 @@ div.img {
 
 h1 { 
      font-size: 4em;
-     font-family: "Alef", sans-serif;
+     font-family: "Montserrat", sans-serif;
      color: black;
 }
 
@@ -49,16 +45,16 @@ td,th {
 
 h2{ 
      font-size: 2.5em;
-     font-family: "Alef", sans-serif;
+     font-family: "Montserrat", sans-serif;
      color: #47423F;
      background-color:rgba(250,240,230,0.7);
      padding: 10px;
 }
 
 h3 { 
-     font-size: 1.5em;
-     font-family: "Alef", sans-serif;
-     color: DarkGray;
+     font-size: 2em;
+     font-family: "Lato", sans-serif;
+     color: DarkSlateGray;
      padding: 5px;
 }
 
@@ -90,10 +86,20 @@ p.image {
           background-color:rgba(230,240,250,0.5);
  }
 
+div.slidenumber { 
+          position: fixed;
+          padding: 5px;
+          bottom:  0;
+          right: 0;
+                  font-family: "Telex", sans-serif;
+          font-size: 1.2em;
+          background-color:rgba(230,240,250,0.5);
+ }
+
 .step
 {
 	position: relative;
-	width: 1024px;
+	width: 850px;
 	padding: 50px;
 	margin: 0 auto;
 	background-color: #FAF0E6;
@@ -102,3 +108,14 @@ p.image {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
+code { 
+       font-family: Lekton, Courier, Courier New, monospace;
+       font-size: 1.1em;
+       background-color: black;
+       color: lightgreen;
+       font-weight:bold;
+       margin: 2px;
+       padding: 2px;
+       -moz-border-radius: 10px;
+       border-radius: 10px;
+}

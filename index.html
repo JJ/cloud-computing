@@ -178,7 +178,8 @@
 
 <ul>
   <li>Un hipervisor tipo 1 (que arranca directamente) arranca un
-    sistema operativo <em>anfitrión</em> o <a href='http://wiki.xen.org/wiki/Dom0'><em>dominio0</em>
+    sistema operativo <em>anfitrión</em>
+    o <a href='http://wiki.xen.org/wiki/Dom0'><em>dominio 0</em>
       == <code>dom0</code></a>.</li>
   <li>El resto de los sistemas operativos <em>invitados</em> arrancan
     en <a href='http://wiki.xen.org/wiki/DomU'><em>dominio de
@@ -186,6 +187,39 @@
 </ul>
 
 </div>
+
+<div class="step" data-x='8000' data-y='1500'
+     data-rotate-x='90'>
+
+<h2>Un poco de organización</h2>
+
+<img src='dibujo.png' alt='dibujo cutre para ilustrar lo anterior' style='float:right;margin:10px;height:500px'/>
+
+<h3><code>domU</code> ejecutan los sistemas
+  operativos <em>invitados</em></h3>
+</div>
+
+<div class="step" data-x='9000' data-y='1500'
+     data-rotate-x='90'>
+
+  <h2>OpenStack Compute y sus hipervisores</h2>
+
+  <h3>OpenStack Compute crea la CPU virtual</h3>
+
+<ul>
+  <li>Permite <a href='http://docs.openstack.org/trunk/openstack-compute/admin/content/selecting-a-hypervisor.html'>seleccionar
+      uno o varios hipervisores</a></li>
+
+  <li><a href='https://wiki.openstack.org/wiki/HypervisorSupportMatrix'>qemu/KVM
+  sobre x86</a> tienen el máximo grado de soporte, seguido de
+  XenAPI</li>
+
+</ul>
+
+<h3>Nova es el software que gestiona el nodo computacional</h3>
+
+</div>
+
 
 </div> <!-- big div -->
 

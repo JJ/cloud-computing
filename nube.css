@@ -119,3 +119,10 @@ code {
        -moz-border-radius: 10px;
        border-radius: 10px;
 }
+
+abbr {
+       cursor:help; 
+       border-bottom: 2px dotted DarkBlue;
+}
+
+

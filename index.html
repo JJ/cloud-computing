@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
 <title>Computación en la nube; Curso del Centro Mediterráneo</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Alef|Telex|Montserrat|Lato|Lekton' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="nube.css" />
 </head>
@@ -262,7 +263,14 @@
 </div> <!-- big div -->
 
 <script type="text/javascript" src="impress.js"></script>
-<script>impress().init();</script>
+<script>$(function() {
+  impress().init();
+  $("div.step").each( function() {
+  $(this).append("<div class='slidenumber'>"+$("div.step").index(
+  $(this) )+"</p>");
+});
+});
+</script>
 
 </body>
 

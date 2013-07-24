@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
 <title>Computación en la nube; Curso del Centro Mediterráneo</title>
 <link href='http://fonts.googleapis.com/css?family=Alef|Telex' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="mm.css" />
+<link rel="stylesheet" type="text/css" href="nube.css" />
 </head>
 <!-- taken from http://www.sitepoint.com/pure-css3-paper-curls/ -->
 <body>
@@ -13,7 +13,7 @@
 <div id="impress"> <!-- impress.js presentation goes inside this -->
   
 
-<div class="step">
+<div class="step" data-scale='5'>
   <h1>Tendencias en Ingeniería de Computadores: Cloud computing</h1>
 
   <h2><span class='ugr'><strong>JJ Merelo</strong></h2>
@@ -21,6 +21,70 @@
 
   <h3>Siga esta presentación en  <a href=''></a></h3>
   <p class='image'><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>
+</div>
+
+<div class="step" data-scale='1' data-x='5000' data-rotate-x='90'>
+
+  <h2>Os presento a OpenStack</h2>
+
+<ul>
+  <li><a href='http://www.openstack.org/'>OpenStack</a> es un producto para construir nubes públicas y privadas.</li>
+  <li>Virtualiza la computación, el almacenamiento y la red.</li>
+</ul>
+<img src='http://www.openstack.org/themes/openstack/images/openstack-software-diagram.png' alt='imagen de openstack.org'>
+  <p class='image'>Imagen de <a href='http://openstack.org'>OpenStack</a>.</p>
+</div>
+
+<div class="step" data-scale='1' data-x='6000' data-rotate-x='90'>
+  <h2>Pero ¿qué es virtualizar?</h2>
+
+  <h3>¡Virtualizar es hacer algo de mentirijillas!</h3>
+
+<ul>
+  <li>Una <em>nube</em> es un recurso <em>bajo demanda</em>, <em>escalable</em> y <em>facturable según uso</em>.</li>
+  <li>El <a href='http://en.wikipedia.org/wiki/Cloud_computing#Origin_of_the_term'>origen
+  de la palabra</a> viene de la tradicional representación de recursos
+  en la red como una nube.</li>
+</ul>
+
+<h3>¡Hay que tener cuidado con las tormentas!</h3>
+</div>
+
+<div class="step" data-scale='1' data-x='5000' data-y='1000'
+     data-rotate-x='90'>
+  <h2>Virtualizando un procesador</h2>
+
+<ul>
+  <li>La virtualización de recursos con un equivalente físico (CPU,
+    disco duro) se denomina <em>Infrastructure as a Service</em>,
+    infraestructura como un servicio.</li>
+
+  <li>La virtualización la llevan a cabo <a href='https://en.wikipedia.org/wiki/Hypervisor'>programas
+      llamados <em>hipervisores</em></a> o <em>Virtual Machine Monitors</em>
+    (VMM)</li> 
+
+</ul>
+ <img src='https://upload.wikimedia.org/wikipedia/commons/e/e1/Hyperviseur.png'
+      alt='tipos de hipervisores'>
+
+  <p class='image'>Imagen de la <a href=''https://en.wikipedia.org/wiki/Hypervisor'>Wikipedia</a></p>
+
+</div>
+
+<div class="step" data-scale='1' data-x='5000' data-y='2000'
+     data-rotate-x='90'>
+
+  <h2>Hipervisores para el niño y la niña</h2>
+
+<ul>
+  <li><a href='https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine'>KVM,
+      Kernel-based Virtual Machine</a>, módulo del núcleo de
+      Linux: híbrido Tipo 1-2</li>
+
+  <li><a href='https://en.wikipedia.org/wiki/Hyper-V'>Hyper-V</a> de
+    (ahora) Microsoft: Tipo 1</li>
+</ul>
+
 </div>
 
 </div> <!-- big div -->

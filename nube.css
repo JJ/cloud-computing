@@ -86,6 +86,16 @@ p.image {
           background-color:rgba(230,240,250,0.5);
  }
 
+div.slidenumber { 
+          position: fixed;
+          padding: 5px;
+          bottom:  0;
+          right: 0;
+                  font-family: "Telex", sans-serif;
+          font-size: 1.2em;
+          background-color:rgba(230,240,250,0.5);
+ }
+
 .step
 {
 	position: relative;

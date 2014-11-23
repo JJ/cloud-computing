@@ -1,65 +1,64 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
-<title>Computación en la nube; Curso del Centro Mediterráneo</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Alef|Telex|Montserrat|Lato|Lekton' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="nube.css" />
-</head>
-<!-- taken from http://www.sitepoint.com/pure-css3-paper-curls/ -->
-<body>
+  <head>
+    <title>ComputaciÃ³n en la nube; Curso del Centro MediterrÃ¡neo</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Alef|Telex|Montserrat|Lato|Lekton' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="nube.css" />
+  </head>
+  <!-- taken from http://www.sitepoint.com/pure-css3-paper-curls/ -->
+  <body>
+    
+    
+    <div id="impress"> <!-- impress.js va aquÃ­ -->
+      
+      
+      <div class="step" data-scale='5'>
+	<h1>ComputaciÃ³n nube</h1>
 
-
-<div id="impress"> <!-- impress.js va aquí -->
-  
-
-<div class="step" data-scale='5'>
-  <h1>Tendencias en Ingeniería de Computadores: Servicios en la nube</h1>
-
-  <h2><span class='ugr'><strong>JJ Merelo</strong></h2>
-  <h2><a href='http://geneura.wordpress.com'><span class='ugr'>GeNeura, U. Granada</span></a>, <a href='http://twitter.com/jjmerelo'>@jjmerelo</a></h2>
-
-  <h3>Siga esta presentación en  <a href='http://jj.github.io/cloud-computing/'>goo.gl/bDpql4</a></h3>
-  <p class='image'><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>
-</div>
-
-<div class="step" data-scale='1' data-x='5000' data-rotate-x='90'>
-
-  <h2>Os presento a OpenStack</h2>
-
-<ul>
-  <li><a href='http://www.openstack.org/'>OpenStack</a> es un producto para construir nubes públicas y privadas.</li>
-  <li>Virtualiza la computación, el almacenamiento y la red.</li>
-</ul>
-<img src='http://www.openstack.org/themes/openstack/images/openstack-software-diagram.png' alt='imagen de openstack.org'>
-  <p class='image'>Imagen de <a href='http://openstack.org'>OpenStack</a>.</p>
-</div>
-
-<div class="step" data-scale='1' data-x='6000' data-rotate-x='90'>
-  <h2>Pero ¿qué es virtualizar?</h2>
-
-  <h3>¡Virtualizar es hacer algo de mentirijillas!</h3>
-
-<ul>
-  <li>Una <em>nube</em> es un recurso <em>bajo demanda</em>, <em>escalable</em> y <em>facturable según uso</em>.</li>
+	<h2><span class='ugr'><strong>JJ Merelo</strong></h2>
+	  <h2><a href='http://geneura.wordpress.com'><span class='ugr'>GeNeura, U. Granada</span></a>, <a href='http://twitter.com/jjmerelo'>@jjmerelo</a></h2>
+	  
+	  <h3>Siga esta presentaciÃ³n en  <a href='http://jj.github.io/cloud-computing/'>goo.gl/bDpql4</a></h3>
+	  <p class='image'><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a></p>
+      </div>
+      
+      <div class="step" data-scale='1' data-x='5000' data-rotate-x='90'>
+	
+	<h2>Os presento a OpenStack</h2>
+	
+	<ul>
+	  <li><a href='http://www.openstack.org/'>OpenStack</a> es un producto para construir nubes pÃºblicas y privadas.</li>
+	  <li>Virtualiza la computaciÃ³n, el almacenamiento y la red.</li>
+	</ul>
+	<img src='http://www.openstack.org/themes/openstack/images/openstack-software-diagram.png' alt='imagen de openstack.org'>
+	<p class='image'>Imagen de <a href='http://openstack.org'>OpenStack</a>.</p>
+      </div>
+      
+      <div class="step" data-scale='1' data-x='6000' data-rotate-x='90'>
+	<h2>Pero Â¿quÃ© es virtualizar?</h2>
+	
+	<h3>Â¡Virtualizar es hacer algo de mentirijillas!</h3>
+	
+	<ul>
+  <li>Una <em>nube</em> es un recurso <em>bajo demanda</em>, <em>escalable</em> y <em>facturable segÃºn uso</em>.</li>
   <li>El <a href='http://en.wikipedia.org/wiki/Cloud_computing#Origin_of_the_term'>origen
-  de la palabra</a> viene de la tradicional representación de recursos
+  de la palabra</a> viene de la tradicional representaciÃ³n de recursos
   en la red como una nube.</li>
 </ul>
 
-<h3>¡Hay que tener cuidado con las tormentas!</h3>
+<h3>Â¡Hay que tener cuidado con las tormentas!</h3>
 </div>
 
 <div class="step" data-scale='1' data-x='7000' data-rotate-x='90'>
   <h2>Si hay que virtualizar, se virtualiza. Pero virtualizar para nada...</h2>
 
 <ul>
-  <li>El origen de la virtualización está en los <em>mainframes de los 60</em></li>
-  <li>Resurge en el año 2005 por la potencia alcanzada por los
+  <li>El origen de la virtualizaciÃ³n estÃ¡ en los <em>mainframes de los 60</em></li>
+  <li>Resurge en el aÃ±o 2005 por la potencia alcanzada por los
   procesadores.</li>
 
-  <li>Además: simplifica el control y despliegue de recursos, permite
+  <li>AdemÃ¡s: simplifica el control y despliegue de recursos, permite
     usar diferentes sistemas operativos y aprovechar mejor el
     hardware.</li>
 
@@ -69,17 +68,17 @@
 
 <div class="step" data-scale='1' data-x='8000' data-rotate-x='90'>
 
-  <h2>La virtualización es la <em>killer app</em> del software
+  <h2>La virtualizaciÃ³n es la <em>killer app</em> del software
   libre.</h2>
 
   <ul>
-    <li>Toda la nube está basada en software libre, empezando por los
+    <li>Toda la nube estÃ¡ basada en software libre, empezando por los
       propios programas que la sustentan.</li>
-    <li>Los estándares abiertos permite que se integren aplicaciones
+    <li>Los estÃ¡ndares abiertos permite que se integren aplicaciones
       procedentes de muchos <em>vendors</em> diferentes.</li>
-    <li>El modelo económico está basado en los servicios, no en la
+    <li>El modelo econÃ³mico estÃ¡ basado en los servicios, no en la
       venta por licencia.</li>
-    <li>La virtualización también es la killer app del software
+    <li>La virtualizaciÃ³n tambiÃ©n es la killer app del software
     privativo.</li>
   </ul>
 
@@ -92,8 +91,8 @@
 
 <ul>
   <li>El software libre te da varias libertades: copia, uso, acceso al
-    fuente y distribución.</li>
-  <li>Como hay libertad de uso, copia y distribución, es, en general,
+    fuente y distribuciÃ³n.</li>
+  <li>Como hay libertad de uso, copia y distribuciÃ³n, es, en general,
   gratis.</li>
   <li>Pero lo importante es como se construye un ecosistema de
     herramientas a partir de uno determinado.</li>
@@ -109,24 +108,24 @@
     <li><a href='http://www.openstack.org/birthday?awesm=awe.sm_r36Ss'>OpenStack</a>
     fue liberado por la NASA
       y <a href='http://rackspace.com'>RackSpace</a> en 2010.</li>
-    <li>1278 contribuyentes han escrito 1.3 millones líneas de
-    código; 231 compañías.</li>
+    <li>1278 contribuyentes han escrito 1.3 millones lÃ­neas de
+    cÃ³digo; 231 compaÃ±Ã­as.</li>
   </ul>
 
-  <h3>Nada de esto habría sido posible si no fuera <strong>software libre</strong></h3>
+  <h3>Nada de esto habrÃ­a sido posible si no fuera <strong>software libre</strong></h3>
 </div>
 
 <div class="step" data-scale='1' data-x='11000' data-rotate-x='90'>
 
-  <h2>Pero el software libre es mucho más</h2>
+  <h2>Pero el software libre es mucho mÃ¡s</h2>
 
 <ul>
-  <li>Ciclos de desarrollo más rápidos.</li>
-  <li>Mejores prácticas en el desarrollo de código seguro.</li>
+  <li>Ciclos de desarrollo mÃ¡s rÃ¡pidos.</li>
+  <li>Mejores prÃ¡cticas en el desarrollo de cÃ³digo seguro.</li>
   <li>Formatos abiertos.</li>
-  <li>Creación de un ecosistema de marcos/librerías/código.</li>
+  <li>CreaciÃ³n de un ecosistema de marcos/librerÃ­as/cÃ³digo.</li>
   <li>Desarrollo empresarial <em>no</em> basado en alquiler de
-    licencias sino personalización o servicios.</li></ul>
+    licencias sino personalizaciÃ³n o servicios.</li></ul>
 
 <h3>O, por ejemplo, venta de servicios basados en la nube</h3>
 </div>
@@ -137,11 +136,11 @@
   <h2>Virtualizando un procesador</h2>
 
 <ul>
-  <li>La virtualización de recursos con un equivalente físico (CPU,
+  <li>La virtualizaciÃ³n de recursos con un equivalente fÃ­sico (CPU,
     disco duro) se denomina <em>Infrastructure as a Service</em>,
     infraestructura como un servicio.</li>
 
-  <li>La virtualización la llevan a cabo <a href='https://en.wikipedia.org/wiki/Hypervisor'>programas
+  <li>La virtualizaciÃ³n la llevan a cabo <a href='https://en.wikipedia.org/wiki/Hypervisor'>programas
       llamados <em>hipervisores</em></a> o <em>Virtual Machine Monitors</em>
     (VMM)</li> 
 
@@ -156,12 +155,12 @@
 <div class="step" data-scale='1' data-x='6000' data-y='1500'
      data-rotate-x='90'>
 
-  <h2>Hipervisores para el niño y la niña</h2>
+  <h2>Hipervisores para el niÃ±o y la niÃ±a</h2>
 
 <ul>
   <li><a href='https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine'>KVM,
-      Kernel-based Virtual Machine</a>, módulo del núcleo de
-      Linux: híbrido Tipo 1-2</li>
+      Kernel-based Virtual Machine</a>, mÃ³dulo del nÃºcleo de
+      Linux: hÃ­brido Tipo 1-2</li>
 
   <li><a href='https://en.wikipedia.org/wiki/Hyper-V'>Hyper-V</a> de
     (ahora) Microsoft: Tipo 1</li>
@@ -175,11 +174,11 @@
 <div class="step" data-scale='1' data-x='7000' data-y='1500'
      data-rotate-x='90'>
 
-  <h2>Todavía hay clases</h2>
+  <h2>TodavÃ­a hay clases</h2>
 
 <ul>
   <li>Un hipervisor tipo 1 (que arranca directamente) arranca un
-    sistema operativo <em>anfitrión</em>
+    sistema operativo <em>anfitriÃ³n</em>
     o <a href='http://wiki.xen.org/wiki/Dom0'><em>dominio 0</em>
       == <code>dom0</code></a>.</li>
   <li>El resto de los sistemas operativos <em>invitados</em> arrancan
@@ -192,7 +191,7 @@
 <div class="step" data-x='8000' data-y='1500'
      data-rotate-x='90'>
 
-<h2>Un poco de organización</h2>
+<h2>Un poco de organizaciÃ³n</h2>
 
 <img src='dibujo.png' alt='dibujo cutre para ilustrar lo anterior' style='float:right;margin:10px;height:500px'/>
 
@@ -212,7 +211,7 @@
       uno o varios hipervisores</a></li>
 
   <li><a href='https://wiki.openstack.org/wiki/HypervisorSupportMatrix'>qemu/KVM
-  sobre x86</a> tienen el máximo grado de soporte, seguido de
+  sobre x86</a> tienen el mÃ¡ximo grado de soporte, seguido de
   XenAPI</li>
 
 </ul>
@@ -224,50 +223,50 @@
 <div class="step" data-x='5000' data-y='3000'
      data-rotate-x='90'>
 
-<h2>Nada existe sin soporte físico</h2>
+<h2>Nada existe sin soporte fÃ­sico</h2>
 
 <ul>
-  <li>Hasta 2005 la virtualización se hacía atrapando las llamadas al
+  <li>Hasta 2005 la virtualizaciÃ³n se hacÃ­a atrapando las llamadas al
     sistema operativo.</li>
-  <li><a href='https://en.wikipedia.org/wiki/X86_virtualization'>Dos arquitecturas de procesador</a> de sobremesa añaden, en esa
-    época, soporte para
-    virtualización: <a href='https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29'>AMD-V</a>
+  <li><a href='https://en.wikipedia.org/wiki/X86_virtualization'>Dos arquitecturas de procesador</a> de sobremesa aÃ±aden, en esa
+    Ã©poca, soporte para
+    virtualizaciÃ³n: <a href='https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29'>AMD-V</a>
     (<em>Pacifica</em>)
     y <a href='https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29'>VT-x
       de Intel</a> (<em>Vanderpool</em>)</li>
 </ul>
-<h3>Estas arquitecturas añaden instrucciones que permiten realizar
-  operaciones de virtualización de forma más eficiente.</h3>
+<h3>Estas arquitecturas aÃ±aden instrucciones que permiten realizar
+  operaciones de virtualizaciÃ³n de forma mÃ¡s eficiente.</h3>
 </div>
 
 <div class="step" data-x='6000' data-y='3000'
      data-rotate-x='90'>
 
-  <h2>Cincuenta sombras de virtualización</h2>
+  <h2>Cincuenta sombras de virtualizaciÃ³n</h2>
 
 
-  <h3>Virtualización del <em>modo protegido</em> o <em>anillo 0</em> necesita</h3>
+  <h3>VirtualizaciÃ³n del <em>modo protegido</em> o <em>anillo 0</em> necesita</h3>
 
 <ul>
-  <li><em>Traducción binaria</em>: traducción de una instrucciones a
+  <li><em>TraducciÃ³n binaria</em>: traducciÃ³n de una instrucciones a
     otras en <em>anillo 3</em></li>
   <li><em>Ensombrecido</em> de memoria para que no se tenga acceso a
     la misma</li>
-  <li>Emulación de dispositivos de entrada salida.</li>
+  <li>EmulaciÃ³n de dispositivos de entrada salida.</li>
 </ul>
 
-<h3>Hay equivalente en red y E/S a la virtualización de CPU</h3>
+<h3>Hay equivalente en red y E/S a la virtualizaciÃ³n de CPU</h3>
 
 </div>
 
 <div class="step" data-scale='1' data-x='5000' data-rotate-x='90' data-z='1500'>
 
-  <h2>¿Dónde está la pasta?</h2>
+  <h2>Â¿DÃ³nde estÃ¡ la pasta?</h2>
 
   <h3>Vender el acceso o vender servicios</h3>
 
   <ul>
-    <li><em>Construcción</em> de nubes privadas y de aplicaciones
+    <li><em>ConstrucciÃ³n</em> de nubes privadas y de aplicaciones
       sobre la misma.</li>
     <li>Productos
       como <a href='http://www.rackspace.com/blog/next-generation-rackspace-cloud-servers/'>Rackspace
@@ -291,7 +290,7 @@
 
 <div class="step"  data-x='6000' data-rotate-x='90' data-z='-1500'>
 
-  <h2>Hay más ladrillos en ese montón</h2>
+  <h2>Hay mÃ¡s ladrillos en ese montÃ³n</h2>
 
 <ul>
   <li><a href='https://en.wikipedia.org/wiki/Apache_CloudStack'>Apache
@@ -306,7 +305,7 @@
 
 <div class="step"  data-x='7000' data-rotate-x='90' data-z='-1500'>
 
-<h2>¿Y todos esos son software libre?</h2>
+<h2>Â¿Y todos esos son software libre?</h2>
 
 <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/ASF-logo.svg/160px-ASF-logo.svg.png'
      alt='Logo de Apache'>
@@ -315,7 +314,7 @@
     Apache es una licencia de software libre</a> <em>permisiva</em>
   == no <em>copyleft</em>.</h3>
 
-<h2>Los productos <em>cloud</em> más populares usan ese tipo de licencia</h2>
+<h2>Los productos <em>cloud</em> mÃ¡s populares usan ese tipo de licencia</h2>
 
   <p class='image'>Imagen
     de <a href='https://en.wikipedia.org/wiki/Apache_License'>la
@@ -327,12 +326,12 @@
   <h2><em>* as a service</em></h2>
 
 <img src='http://upload.wikimedia.org/wikipedia/commons/3/3c/Cloud_computing_layers.png'
-     title='Capas computación nube' alt='Cllents sobre SaaS, PaaS,
+     title='Capas computaciÃ³n nube' alt='Cllents sobre SaaS, PaaS,
      IaaS' >
 
 <p class='image'>Imagen
   de <a href='http://en.wikipedia.org/wiki/File:Cloud_computing_layers.png'>la
-    wikipedia</a> en el dominio público.</p>
+    wikipedia</a> en el dominio pÃºblico.</p>
 
 </div>
 
@@ -343,7 +342,7 @@
   <h3>Un PaaS ofrece <em>pilas de soluciones</em></h3>
 
 <ul>
-  <li>Generalmente, máquinas <em>configuradas</em>
+  <li>Generalmente, mÃ¡quinas <em>configuradas</em>
     y <em>provisionadas</em> con el sistema operativo ya
     instalado.</li>
   <li>La pila de soluciones basada en Ruby on Rails, Django,
@@ -356,20 +355,20 @@
 
 <div class="step"  data-x='8000' data-rotate-x='90' data-z='-1500' data-y='2000'>
 
-  <h2>Hágalo usted mismo</h2>
+  <h2>HÃ¡galo usted mismo</h2>
 
-  <h3>Herramientas para crear y gestionar tu propio PaaS: configuración</h3>
+  <h3>Herramientas para crear y gestionar tu propio PaaS: configuraciÃ³n</h3>
 
   <ul>
-    <li><a href='https://en.wikipedia.org/wiki/Software_configuration_management'>Gestión
-	de configuración del software o SCM</a> permite seguir y
+    <li><a href='https://en.wikipedia.org/wiki/Software_configuration_management'>GestiÃ³n
+	de configuraciÃ³n del software o SCM</a> permite seguir y
 	controlar cambios en el software, generalmente usando un
       <abbr title='Domain Specific Language'>DSL</abbr></li>
     <li>Algunos ejemplos:
     <a href='https://en.wikipedia.org/wiki/Chef_%28software%29'
        title='por las recetas'>Chef</a>, <a href='https://en.wikipedia.org/wiki/Puppet_%28software%29'>Puppet</a>
        o <a href='https://github.com/blog/1359-the-octoverse-in-2012'
-	    title='el octavo con mayor número de
+	    title='el octavo con mayor nÃºmero de
        contribuyentes'>Salt</a></li>
   </ul>
 </div>
@@ -384,15 +383,15 @@
   <li>Herramientas
   como <a href='http://www.rubyinside.com/vagrant-ruby-powered-virtualbox-vm-building-and-provisioning-3059.html'>Vagrant</a>
     usan Chef y VirtualBox para crear VMs y conectarse con ellas.</li>
-  <li>Permite importar imágenes, establecer configuraciones
-    específicas por máquina y ejecutar cualquier herramienta de
-    configuración.</li>
+  <li>Permite importar imÃ¡genes, establecer configuraciones
+    especÃ­ficas por mÃ¡quina y ejecutar cualquier herramienta de
+    configuraciÃ³n.</li>
   <li><a href='https://github.com/cloudenvy/cloudenvy' alt='Ni
-	 siquiera está en la wikipedia'>Cloud ENVy</a> trabaja con OpenStack</li>
+	 siquiera estÃ¡ en la wikipedia'>Cloud ENVy</a> trabaja con OpenStack</li>
 </ul>
 
-<h3>Además, permite expresar en texto la creación de VMs y controlar
-  su <em>versión</em>.</h3>
+<h3>AdemÃ¡s, permite expresar en texto la creaciÃ³n de VMs y controlar
+  su <em>versiÃ³n</em>.</h3>
 </div>
 
 <div class="step"  data-x='10000' data-rotate-x='90' data-z='-1500' data-y='2000'>
@@ -400,14 +399,14 @@
   <h2>Y controlar las versiones es importante</h2>
 
   <h3>Gestionar los fuentes implica gestionar las versiones en
-  producción</h3>
+  producciÃ³n</h3>
 
 <ul>
-  <li>La mayoría de los PaaS usan sistemas de gestión de versiones
+  <li>La mayorÃ­a de los PaaS usan sistemas de gestiÃ³n de versiones
     (como <a href='http://git-scm.com'><code>git</code></a>)</li>
   <li>Un <abbr title='source code management system'>SCM</abbr>
     permite <em>desplegar</em>, sincronizar, revertir
-    y <em>culpar</em> código.</li>
+    y <em>culpar</em> cÃ³digo.</li>
   <li><code>git clone</code>, <code>git add</code>, <code>git
       commit</code>, <code>git pull</code></li>
 </ul>
@@ -417,7 +416,7 @@
 
   <h3>Ya tenemos la Plataforma (como un servicio)</h3>
 
-  <h2>¡Vamos a usarla!</h2>
+  <h2>Â¡Vamos a usarla!</h2>
 
 <ul>
   <li><a href='http://heroku.com'>Heroku</a>, <a href='http://openshift.com'>OpenShift
@@ -426,7 +425,7 @@
     diferentes configuraciones.</li>
 
   <li>Ofrecen <abbr title='Java, Ruby, Perl, Python,Clojure,
-  node.js'>lenguaje</abbr> + <abbr title='Rack, WSGI, Plack'>integración
+  node.js'>lenguaje</abbr> + <abbr title='Rack, WSGI, Plack'>integraciÃ³n
   web</abbr> + <abbr title='Django, Dancer, RoR, Tornado'>marcos
       de aplicaciones</abbr> + <abbr title='MongoDB, Redis, PostgreSQL, MySQL'>bases de datos</abbr></li>
 
@@ -438,16 +437,16 @@
   <h2>Lo importante son los accesorios</h2>
 
 <ul>
-  <li>Desde un panel de control, un PaaS permite añadir
-    fácilmente <em>cartuchos</em> (OpenShift) o <em>add-ons</em>
+  <li>Desde un panel de control, un PaaS permite aÃ±adir
+    fÃ¡cilmente <em>cartuchos</em> (OpenShift) o <em>add-ons</em>
     (Heroku)</li>
 
-  <li>Cada usuario tiene asignado un número limitado
+  <li>Cada usuario tiene asignado un nÃºmero limitado
     de <em>motores</em> (<em>gears</em> en OpenShift)
     o <a href='https://devcenter.heroku.com/articles/dynos'><em>Dynos</em></a></li>
 
 </ul>
-<h3>Útil
+<h3>Ãtil
   para <a href='http://hoborg-jjmerelo.rhcloud.com'>Novelas</a> y lo
   que se te ocurra</h3>
 
@@ -457,29 +456,29 @@
 
   <h2>Primeros PaaSos</h2>
 
-  <h3>Creación de un Dyno/Gear desde el panel de control y luego:</h3>
+  <h3>CreaciÃ³n de un Dyno/Gear desde el panel de control y luego:</h3>
 
 <ul>
   <li>Uso de cliente: <code>rhc</code> o <code>heroku</code> para
-    conexión y creación de <em>apps</em>: <code>heroku create
+    conexiÃ³n y creaciÃ³n de <em>apps</em>: <code>heroku create
     app</code></li>
-  <li>Configuración de la aplicación y <code>git push</code></li>
+  <li>ConfiguraciÃ³n de la aplicaciÃ³n y <code>git push</code></li>
 </ul>
-<h3>¡Magia!</h3>
+<h3>Â¡Magia!</h3>
 </div>
 
 <div class="step"  data-x='12000' data-rotate-x='90' data-z='-1500'>
 
-  <h2>¿Y todo esto, con qué?</h2>
+  <h2>Â¿Y todo esto, con quÃ©?</h2>
 
 </div>
 
 <div class="step"  data-x='14000' data-rotate-x='90' data-z='-1500' data-scale='2'>
 
-  <h2>¡Con software libre!</h2>
+  <h2>Â¡Con software libre!</h2>
 
-  <h3>OpenShift está liberado, el <em>cinturón de herramientas</em> de
-    Heroku también (y es compatible con otros
+  <h3>OpenShift estÃ¡ liberado, el <em>cinturÃ³n de herramientas</em> de
+    Heroku tambiÃ©n (y es compatible con otros
     sistemas), <code>git</code> se usa en todos sitios.</h3>
 
 </div>
@@ -491,8 +490,8 @@
   <ul>
     <li>La nube mola</li>
     <li>El software libre es imprescindible.</li>
-    <li>Conceptos clave: virtualización, provisionamiento,
-    configuración, infraestructura como un servicio, plataforma como
+    <li>Conceptos clave: virtualizaciÃ³n, provisionamiento,
+    configuraciÃ³n, infraestructura como un servicio, plataforma como
       un servicio, uso <em>freemium</em></li>
   </ul>
 </div>
@@ -501,12 +500,12 @@
 
   <h2>Terminando</h2>
 
-  <h3>¿Alguna pregunta?</h3>
+  <h3>Â¿Alguna pregunta?</h3>
 
-  <h3>Copia esta presentación
+  <h3>Copia esta presentaciÃ³n
   de <a href='http://git.io/esanube'>git.io/esanube</a></h3>
 
-  <h3>Sígueme
+  <h3>SÃ­gueme
  en <a href='http://twitter.com/jjmerelo'>@jjmerelo</a></h3>
 
 <h3> o
